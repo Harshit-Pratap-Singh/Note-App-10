@@ -47,7 +47,7 @@ function CreateArea(props) {
             props.addNote(title, content);
             updateContent("");
             updateTitle("");
-            event. preventDefault();
+            event.preventDefault();
           }}
         >
           <AddIcon />
