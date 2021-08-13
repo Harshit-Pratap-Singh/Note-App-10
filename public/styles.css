@@ -8,13 +8,13 @@ html {
 }
 body {
   background: #eee;
-  padding: 0 16px;
+  padding: 0;
 background-image: url("https://www.transparenttextures.com/patterns/checkered-pattern.png");
 }
 
 header {
   background-color: #f5ba13;
-  margin: auto -16px;
+  margin: auto;
   padding: 16px 32px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
