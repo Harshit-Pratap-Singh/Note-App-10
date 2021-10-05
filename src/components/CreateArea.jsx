@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import AddIcon from '@mui/icons-material/Add';
 import { Fab, Zoom } from '@mui/material';
 
-function CreateArea(props) {
+function CreateArea({ addNote }) {
   const [title, updateTitle] = useState('');
   const [content, updateContent] = useState('');
   const [isClicked, toggle] = useState(false);
@@ -46,7 +46,7 @@ function CreateArea(props) {
         <Zoom in={isClicked}>
           <Fab
             onClick={(event) => {
-              props.addNote(title, content);
+              addNote(title, content);
               updateContent('');
               updateTitle('');
               event.preventDefault();
@@ -59,5 +59,13 @@ function CreateArea(props) {
     </div>
   );
 }
+
+CreateArea.propTypes = {
+  addNote: () => {},
+};
+
+CreateArea.defaultProps = {
+  addNote: () => {},
+};
 
 export default CreateArea;
