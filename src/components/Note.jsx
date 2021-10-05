@@ -1,5 +1,5 @@
 import React from 'react';
-import { string } from 'prop-types';
+import { string, number } from 'prop-types';
 import DeleteIcon from '@mui/icons-material/Delete';
 
 function Note({
@@ -18,14 +18,14 @@ function Note({
 
 Note.propTypes = {
   content: string,
-  id: string,
+  id: number,
   title: string,
   deleteNote: () => {},
 };
 
 Note.defaultProps = {
   content: string,
-  id: string,
+  id: number,
   title: string,
   deleteNote: () => {},
 };
