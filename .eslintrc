@@ -1,0 +1,98 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "airbnb",
+    "eslint:recommended",
+    "react-app"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    },
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "import",
+    "react",
+    "react-hooks",
+    "simple-import-sort"
+  ],
+  "rules": {
+    "arrow-body-style": "off",
+    "import/no-anonymous-default-export": "off",
+    "comma-dangle": [
+      "warn",
+      "always-multiline"
+    ],
+    "import/no-absolute-path": "off",
+    "import/no-named-as-default-member": "off",
+    "import/no-named-as-default": "off",
+    "max-len": [
+      "warn",
+      {
+        "code": 120,
+        "tabWidth": 2
+      }
+    ],
+    "react/jsx-filename-extension": "off",
+    "import/prefer-default-export": "off",
+    "object-curly-newline": "warn",
+    "react/jsx-fragments": [
+      "warn",
+      "element"
+    ],
+    "react/prop-types": "warn",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/prefer-stateless-function": "warn",
+    "react/destructuring-assignment": "off",
+    "react-hooks/rules-of-hooks": "warn",
+    "react/state-in-constructor": "warn",
+    "react/no-access-state-in-setstate": "warn",
+    "no-param-reassign": "warn",
+    "react/sort-comp": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "react/forbid-prop-types": [
+      "error",
+      {
+        "forbid": [
+          "any"
+        ]
+      }
+    ],
+    "object-property-newline": [
+      "warn",
+      {
+        "allowAllPropertiesOnSameLine": false
+      }
+    ],
+    "no-restricted-imports": [
+      "error",
+      {
+        "patterns": [
+          "../*"
+        ]
+      }
+    ],
+    "curly": "error",
+    "no-console": "off", // For temporary debuging and shoud be remove when deploy to prod env.
+    "prefer-promise-reject-errors": "off", // For temporary allow reject() function can empty without throw error.
+    "quotes": ["error", "single", { "allowTemplateLiterals": true }],
+    "react/no-find-dom-node": "off"
+  },
+  "ignorePatterns": [
+    "coverage",
+    "dist",
+    "node_modules",
+    "config"
+  ]
+}
