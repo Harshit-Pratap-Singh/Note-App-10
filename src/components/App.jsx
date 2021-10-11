@@ -10,9 +10,13 @@ function App() {
   const [notes, updateNotes] = useState([]);
 
   function addNote(title, content) {
-    updateNotes((preValue) => {
-      return [...preValue, { title, content }];
-    });
+    if(!title.trim() && !content.trim()) {
+      return;
+  }
+
+  updateNotes((preValue) => {
+    return [...preValue, { title, content }];
+  });
   }
 
   function deleteNote(id) {
