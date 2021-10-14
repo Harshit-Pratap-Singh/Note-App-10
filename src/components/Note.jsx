@@ -10,7 +10,7 @@ function Note(props) {
 			<p class="note__description">
 				{props.content}
 			</p>
-			<button class="note__button" onClick={() => props.deleteNote(props.id)}>
+			<button class="note__button button button--small button--delete" onClick={() => props.deleteNote(props.id)}>
 				<DeleteIcon />
 			</button>
 		</div>

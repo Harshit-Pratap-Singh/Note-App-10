@@ -45,7 +45,7 @@ function CreateArea(props) {
 				/>
 				<Zoom in={isClicked}>
 					<Fab
-						class="create-note__button"
+						class="create-note__button button"
 						onClick={(event) => {
 							props.addNote(title, content);
 							updateContent("");

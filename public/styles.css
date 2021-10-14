@@ -5,6 +5,9 @@
 	--color-silver: #ccc;
 	--color-brand-1: #f5ba13;
 	--color-brand-1-dark: #dea711;
+	--color-error: #ff6347;
+	--color-error-dark: #e7583f;
+
 }
 
 * {
@@ -25,7 +28,7 @@ body {
 	background-image: url("https://www.transparenttextures.com/patterns/checkered-pattern.png");
 }
 
-svg {
+body svg {
 	width: 2.2rem !important;
 	height: 2.2rem !important;
 	font-size: 2.2rem !important;
@@ -53,6 +56,7 @@ header h1 {
 header svg {
 	width: 2.8rem !important;
 	height: 2.8rem !important;
+	font-size: 2.8rem !important;
 }
 /********* HEADER - end *********/
 
@@ -70,6 +74,50 @@ footer p {
 	color: var(--color-silver);
 }
 /********* FOOTER - end *********/
+
+
+/********* BUTTON - start *********/
+.button {
+	width: 4rem;
+	height: 4rem;
+	margin: 1rem;
+	color: var(--color-white);
+	border-radius: 50%;
+	border: none;
+	background-color: var(--color-brand-1);
+	box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+	outline: none;
+}
+
+.button svg {
+	fill: var(--color-white)
+}
+
+.button:hover {
+	background-color: var(--color-brand-1-dark);
+	box-shadow: inset 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+}
+
+.button--small {
+	width: 3rem;
+	height: 3rem;
+}
+
+.button--small svg{
+	width: 1.8rem !important;
+	height: 1.8rem !important;
+	font-size: 1.8rem !important;
+}
+
+.button--delete {
+	background-color: var(--color-error);
+}
+
+.button--delete:hover {
+	background-color: var(--color-error-dark);
+}
+/********* BUTTON - end *********/
 
 
 /********* CREATE NOTE - start *********/
@@ -94,23 +142,9 @@ footer p {
 }
 
 .create-note__button {
-	width: 4rem;
-	height: 4rem;
 	position: absolute;
-	right: 1.8rem;
-	bottom: -1.8rem;
-	color: var(--color-white);
-	border: none;
-	border-radius: 50%;
-	background-color: var(--color-brand-1);
-	box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
-	cursor: pointer;
-	outline: none;
-}
-
-.create-note__button:hover {
-	background-color: var(--color-brand-1-dark);
-	box-shadow: inset 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+	right: 0;
+	bottom: 0;
 }
 /********* CREATE NOTE - end *********/
 
@@ -118,8 +152,10 @@ footer p {
 /********* NOTE - start *********/
 .note {
 	width: 24rem;
+	min-height: 12rem;
 	margin: 1.6rem;
 	padding: 1rem;
+	position: relative;
 	float: left;
 	border-radius: 0.7rem;
 	background-color: var(--color-white);
@@ -138,14 +174,8 @@ footer p {
 }
 
 .note__button {
-	width: 4rem;
-	height: 4rem;
-	margin-right: 1rem;
-	position: relative;
-	float: right;
-	color: var(--color-brand-1);
-	border: none;
-	outline: none;
-	cursor: pointer;
+	position: absolute;
+	right: 0;
+	bottom: 0;
 }
 /********* NOTE - end *********/
