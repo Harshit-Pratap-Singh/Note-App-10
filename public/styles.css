@@ -149,6 +149,25 @@ footer p {
 /********* CREATE NOTE - end *********/
 
 
+/********* NOTE LIST - start *********/
+.note-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style: none;
+}
+.note-list__wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.note-list__item {
+	margin: 20px;
+}
+/********* NOTE LIST - end *********/
+
+
 /********* NOTE - start *********/
 .note {
 	width: 24rem;
@@ -156,7 +175,6 @@ footer p {
 	margin: 1.6rem;
 	padding: 1rem;
 	position: relative;
-	float: left;
 	border-radius: 0.7rem;
 	background-color: var(--color-white);
 	box-shadow: 0 0.2rem 0.5rem var(--color-silver);

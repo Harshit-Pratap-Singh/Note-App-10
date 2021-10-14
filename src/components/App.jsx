@@ -44,7 +44,11 @@ function App() {
 				<div>
 					<Header />
 					<CreateArea addNote={addNote} />
-					{notes.map(Disp)}
+					<div class="note-list__wrapper">
+						<ul class="note-list">
+							{notes.map(Disp)}
+						</ul>
+					</div>
 					<Footer />
 				</div>
 			</StyledEngineProvider>
