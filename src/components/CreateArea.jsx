@@ -26,6 +26,7 @@ function CreateArea(props) {
       <form className="create-note">
       {isClicked && <input
           onChange={changeTitle}
+		  class="create-note__field"
           name="title"
           placeholder="Title"
           value={title}
@@ -33,6 +34,7 @@ function CreateArea(props) {
       }
         
         <textarea
+		  class="create-note__field"
           onChange={changeContent}
           onClick={zoomIn}
           value={content}
@@ -42,6 +44,7 @@ function CreateArea(props) {
         />
         <Zoom in={isClicked}>
         <Fab
+		  class="create-note__button"
           onClick={(event) => {
             props.addNote(title, content);
             updateContent("");
