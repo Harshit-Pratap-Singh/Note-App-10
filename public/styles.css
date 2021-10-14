@@ -16,6 +16,7 @@ body {
 }
 /********* GENERAL - end *********/
 
+
 /********* HEADER - start *********/
 header {
 	background-color: #f5ba13;
@@ -31,6 +32,7 @@ header h1 {
 }
 /********* HEADER - end *********/
 
+
 /********* FOOTER - start *********/
 footer {
 	position: absolute;
@@ -43,43 +45,8 @@ footer {
 footer p {
 	color: #ccc;
 }
-/********* FOOTER - start *********/
+/********* FOOTER - end *********/
 
-/********* NOTE - start *********/
-.note {
-	background: #fff;
-	border-radius: 7px;
-	box-shadow: 0 2px 5px #ccc;
-	padding: 10px;
-	width: 240px;
-	margin: 16px;
-	float: left;
-}
-
-.note__title {
-	font-size: 1.1em;
-	margin-bottom: 6px;
-}
-
-.note__description {
-	font-size: 1.1em;
-	margin-bottom: 10px;
-	white-space: pre-wrap;
-	word-wrap: break-word;
-}
-
-.note__button {
-	position: relative;
-	float: right;
-	margin-right: 10px;
-	color: #f5ba13;
-	border: none;
-	width: 36px;
-	height: 36px;
-	cursor: pointer;
-	outline: none;
-}
-/********* NOTE - end *********/
 
 /********* CREATE NOTE - start *********/
 .create-note {
@@ -122,3 +89,40 @@ footer p {
 	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 /********* CREATE NOTE - end *********/
+
+
+/********* NOTE - start *********/
+.note {
+	background: #fff;
+	border-radius: 7px;
+	box-shadow: 0 2px 5px #ccc;
+	padding: 10px;
+	width: 240px;
+	margin: 16px;
+	float: left;
+}
+
+.note__title {
+	font-size: 1.1em;
+	margin-bottom: 6px;
+}
+
+.note__description {
+	font-size: 1.1em;
+	margin-bottom: 10px;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+.note__button {
+	position: relative;
+	float: right;
+	margin-right: 10px;
+	color: #f5ba13;
+	border: none;
+	width: 36px;
+	height: 36px;
+	cursor: pointer;
+	outline: none;
+}
+/********* NOTE - end *********/
