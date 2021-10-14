@@ -101,3 +101,8 @@ form.create-note button {
   cursor: pointer;
   outline: none;
 }
+
+form.create-note button:hover {
+  background: #dea711;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+}
