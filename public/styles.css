@@ -1,4 +1,12 @@
 /********* GENERAL - start *********/
+:root {
+	--color-white: #fff;
+	--color-light: #eee;
+	--color-silver: #ccc;
+	--color-brand-1: #f5ba13;
+	--color-brand-1-dark: #dea711;
+}
+
 * {
 	padding: 0;
 	margin: 0;
@@ -10,7 +18,7 @@ html {
 }
 
 body {
-	background-color: #eee;
+	background-color: var(--color-light);
 	padding: 0;
 	background-image: url("https://www.transparenttextures.com/patterns/checkered-pattern.png");
 }
@@ -19,14 +27,14 @@ body {
 
 /********* HEADER - start *********/
 header {
-	background-color: #f5ba13;
+	background-color: var(--color-brand-1);
 	margin: auto;
 	padding: 16px 32px;
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 header h1 {
-	color: #fff;
+	color: var(--color-white);
 	font-family: "McLaren", cursive;
 	font-weight: 200;
 }
@@ -43,7 +51,7 @@ footer {
 }
 
 footer p {
-	color: #ccc;
+	color: var(--color-silver);
 }
 /********* FOOTER - end *********/
 
@@ -53,10 +61,10 @@ footer p {
 	position: relative;
 	width: 480px;
 	margin: 30px auto 20px auto;
-	background-color: #fff;
+	background-color: var(--color-white);
 	padding: 15px;
 	border-radius: 7px;
-	box-shadow: 0 1px 5px rgb(138, 137, 137);
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
 }
 
 .create-note__field {
@@ -73,8 +81,8 @@ footer p {
 	position: absolute;
 	right: 18px;
 	bottom: -18px;
-	background-color: #f5ba13;
-	color: #fff;
+	background-color: var(--color-brand-1);
+	color: var(--color-white);
 	border: none;
 	border-radius: 50%;
 	width: 36px;
@@ -85,7 +93,7 @@ footer p {
 }
 
 .create-note__button:hover {
-	background-color: #dea711;
+	background-color: var(--color-brand-1-dark);
 	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 /********* CREATE NOTE - end *********/
@@ -93,9 +101,9 @@ footer p {
 
 /********* NOTE - start *********/
 .note {
-	background-color: #fff;
+	background-color: var(--color-white);
 	border-radius: 7px;
-	box-shadow: 0 2px 5px #ccc;
+	box-shadow: 0 2px 5px var(--color-silver);
 	padding: 10px;
 	width: 240px;
 	margin: 16px;
@@ -118,7 +126,7 @@ footer p {
 	position: relative;
 	float: right;
 	margin-right: 10px;
-	color: #f5ba13;
+	color: var(--color-brand-1);
 	border: none;
 	width: 36px;
 	height: 36px;
