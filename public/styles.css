@@ -19,9 +19,9 @@ html {
 }
 
 body {
-	background-color: var(--color-light);
 	padding: 0;
 	font-size: 1.6rem;
+	background-color: var(--color-light);
 	background-image: url("https://www.transparenttextures.com/patterns/checkered-pattern.png");
 }
 
@@ -35,19 +35,19 @@ svg {
 
 /********* HEADER - start *********/
 header {
-	background-color: var(--color-brand-1);
 	margin: auto;
 	padding: 1.6rem 3.2rem;
 	box-shadow: 0 0 1.6rem 0 rgba(0, 0, 0, 0.3);
+	background-color: var(--color-brand-1);
 }
 
 header h1 {
 	display: flex;
 	align-items: self-end;
-	color: var(--color-white);
 	font-family: "McLaren", cursive;
 	font-weight: 200;
 	line-height: 100%;
+	color: var(--color-white);
 }
 
 header svg {
@@ -59,11 +59,11 @@ header svg {
 
 /********* FOOTER - start *********/
 footer {
-	position: absolute;
-	text-align: center;
-	bottom: 0;
 	width: 100%;
 	height: 2.5rem;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
 }
 
 footer p {
@@ -74,35 +74,35 @@ footer p {
 
 /********* CREATE NOTE - start *********/
 .create-note {
-	position: relative;
 	width: 48rem;
 	margin: 3rem auto 2rem auto;
-	background-color: var(--color-white);
 	padding: 1.5rem;
+	position: relative;
 	border-radius: 0.7rem;
+	background-color: var(--color-white);
 	box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.3);
 }
 
 .create-note__field {
 	width: 100%;
-	border: none;
 	padding: 0.4rem;
-	outline: none;
 	font-size: 1.2em;
 	font-family: inherit;
+	border: none;
+	outline: none;
 	resize: none;
 }
 
 .create-note__button {
+	width: 4rem;
+	height: 4rem;
 	position: absolute;
 	right: 1.8rem;
 	bottom: -1.8rem;
-	background-color: var(--color-brand-1);
 	color: var(--color-white);
 	border: none;
 	border-radius: 50%;
-	width: 4rem;
-	height: 4rem;
+	background-color: var(--color-brand-1);
 	box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
 	cursor: pointer;
 	outline: none;
@@ -117,18 +117,18 @@ footer p {
 
 /********* NOTE - start *********/
 .note {
-	background-color: var(--color-white);
-	border-radius: 0.7rem;
-	box-shadow: 0 0.2rem 0.5rem var(--color-silver);
-	padding: 1rem;
 	width: 24rem;
 	margin: 1.6rem;
+	padding: 1rem;
 	float: left;
+	border-radius: 0.7rem;
+	background-color: var(--color-white);
+	box-shadow: 0 0.2rem 0.5rem var(--color-silver);
 }
 
 .note__title {
-	font-size: 1.1em;
 	margin-bottom: 0.6rem;
+	font-size: 1.1em;
 }
 
 .note__description {
@@ -138,14 +138,14 @@ footer p {
 }
 
 .note__button {
-	position: relative;
-	float: right;
-	margin-right: 1rem;
-	color: var(--color-brand-1);
-	border: none;
 	width: 4rem;
 	height: 4rem;
-	cursor: pointer;
+	margin-right: 1rem;
+	position: relative;
+	float: right;
+	color: var(--color-brand-1);
+	border: none;
 	outline: none;
+	cursor: pointer;
 }
 /********* NOTE - end *********/
