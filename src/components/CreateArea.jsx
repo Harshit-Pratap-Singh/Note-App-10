@@ -27,7 +27,7 @@ function CreateArea(props) {
 				{
 					isClicked && <input
 						onChange={changeTitle}
-						class="create-note__field"
+						class="create-note__title create-note__field"
 						name="title"
 						placeholder="Title"
 						value={title}
@@ -35,7 +35,7 @@ function CreateArea(props) {
 				}
 
 				<textarea
-					class="create-note__field"
+					class="create-note__description create-note__field"
 					onChange={changeContent}
 					onClick={zoomIn}
 					value={content}
