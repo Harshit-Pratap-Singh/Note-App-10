@@ -9,11 +9,11 @@
 	--breakpoint-xxxl: 1500px;
 	--breakpoint-xxxxl: 1700px;
 
-	--color-white: #fff;
-	--color-light: #eee;
-	--color-silver: #ccc;
-	--color-gray: #888;
-	--color-dark: #333;
+	--color-white: #ffffff;
+	--color-light: #f7f7f7;
+	--color-silver: #cccccc;
+	--color-gray: #888888;
+	--color-dark: #333333;
 	--color-brand-1: #f5ba13;
 	--color-success: #008080;
 	--color-error: #ff6347;
