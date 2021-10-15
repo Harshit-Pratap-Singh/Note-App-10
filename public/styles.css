@@ -51,14 +51,14 @@ textarea {
 
 
 /********* HEADER - start *********/
-header {
+.page-header {
 	margin: auto;
 	padding: 1.6rem 3.2rem;
 	box-shadow: 0 0 1.6rem 0 rgba(0, 0, 0, 0.3);
 	background-color: var(--color-brand-1);
 }
 
-header h1 {
+.page-header__title {
 	display: flex;
 	align-items: self-end;
 	font-family: "McLaren", cursive;
@@ -67,10 +67,11 @@ header h1 {
 	color: var(--color-white);
 }
 
-header svg {
+.page-header__logo {
 	width: 2.8rem !important;
 	height: 2.8rem !important;
 	font-size: 2.8rem !important;
+	fill: var(--color-white);
 }
 /********* HEADER - end *********/
 
