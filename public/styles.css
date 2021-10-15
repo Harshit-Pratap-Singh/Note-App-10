@@ -78,14 +78,15 @@ header svg {
 /********* FOOTER - start *********/
 .page-footer {
 	width: 100%;
-	height: 2.5rem;
+	padding: 1rem 2rem;
 	position: absolute;
 	bottom: 0;
 	text-align: center;
+	background-color: var(--color-gray);
 }
 
 .page-footer__copyright {
-	color: var(--color-silver);
+	color: var(--color-white);
 }
 /********* FOOTER - end *********/
 
