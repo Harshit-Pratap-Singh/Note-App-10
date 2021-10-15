@@ -236,7 +236,7 @@ textarea {
 	flex-direction: column;
 	justify-content: space-between;
 	border-radius: 0.7rem;
-	background-color: var(--color-white);
+	background-color: var(--color-light);
 	box-shadow: 0 0.2rem 0.5rem var(--color-silver);
 }
 
