@@ -17,6 +17,9 @@
 	--color-brand-1: #f5ba13;
 	--color-success: #008080;
 	--color-error: #ff6347;
+
+	--font-1: "McLaren", cursive;
+	--font-2: "Montserrat", sans-serif;
 }
 
 *,
@@ -49,7 +52,7 @@ textarea {
 
 /********* PAGE - start *********/
 .page {
-	font-family: "Montserrat", sans-serif;
+	font-family: var(--font-2);
 	font-size: 10px;
 }
 
@@ -88,7 +91,7 @@ textarea {
 .page-header__title {
 	display: flex;
 	align-items: self-end;
-	font-family: "McLaren", cursive;
+	font-family: var(--font-1);
 	font-weight: 200;
 	line-height: 100%;
 	color: var(--color-white);
@@ -218,11 +221,13 @@ textarea {
 }
 
 .create-note__title {
+	font-family: var(--font-1);
 	font-size: 1.3em;
 	font-weight: 900;
 }
 
 .create-note__description {
+	font-family: var(--font-1);
 	font-size: 1em;
 	font-weight: 400;
 }
@@ -290,12 +295,14 @@ textarea {
 
 .note__title {
 	margin-bottom: 0.6rem;
+	font-family: var(--font-1);
 	font-weight: 900;
 	font-size: 1em;
 }
 
 .note__description {
 	margin-bottom: 1rem;
+	font-family: var(--font-1);
 	white-space: pre-wrap;
 	word-wrap: break-word;
 	font-size: 0.8em;
