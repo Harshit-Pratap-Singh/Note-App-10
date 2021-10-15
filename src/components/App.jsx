@@ -42,7 +42,7 @@ function App() {
 		<ThemeProvider theme={theme}>
 			<StyledEngineProvider injectFirst>
 				<Header />
-				<div class="page__main page__inner">
+				<div class="page__main sticky__main page__inner">
 					<div class="page__container">
 						<CreateArea addNote={addNote} />
 						<div class="note-list__wrapper">

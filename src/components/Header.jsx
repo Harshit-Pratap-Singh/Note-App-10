@@ -3,7 +3,7 @@ import CreateIcon from "@mui/icons-material/Create";
 
 function Header() {
 	return (
-		<header class="page-header page__inner">
+		<header class="page-header sticky__header page__inner">
 			<div class="page__container">
 				<h1 class="page-header__title">
 					<span class="page-header__brand-logo">
