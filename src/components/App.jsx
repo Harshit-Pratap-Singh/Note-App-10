@@ -41,16 +41,18 @@ function App() {
 	return (
 		<ThemeProvider theme={theme}>
 			<StyledEngineProvider injectFirst>
-				<div>
-					<Header />
-					<CreateArea addNote={addNote} />
-					<div class="note-list__wrapper">
-						<ul class="note-list">
-							{notes.map(Disp)}
-						</ul>
+				<Header />
+				<div class="page__main page__inner">
+					<div class="page__container">
+						<CreateArea addNote={addNote} />
+						<div class="note-list__wrapper">
+							<ul class="note-list">
+								{notes.map(Disp)}
+							</ul>
+						</div>
 					</div>
-					<Footer />
 				</div>
+				<Footer />
 			</StyledEngineProvider>
 		</ThemeProvider>
 	);

@@ -1,5 +1,14 @@
 /********* GENERAL - start *********/
 :root {
+	--breakpoint-xs: 380px;
+	--breakpoint-sm: 576px;
+	--breakpoint-md: 768px;
+	--breakpoint-lg: 1024px;
+	--breakpoint-xl: 1080px;
+	--breakpoint-xxl: 1280px;
+	--breakpoint-xxxl: 1500px;
+	--breakpoint-xxxxl: 1700px;
+
 	--color-white: #fff;
 	--color-light: #eee;
 	--color-silver: #ccc;
@@ -16,18 +25,6 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-}
-
-html {
-	font-family: "Montserrat", sans-serif;
-	font-size: 10px;
-}
-
-body {
-	padding: 0;
-	font-size: 1.6rem;
-	background-color: var(--color-light);
-	background-image: url("https://www.transparenttextures.com/patterns/checkered-pattern.png");
 }
 
 body svg {
@@ -50,10 +47,39 @@ textarea {
 /********* GENERAL - end *********/
 
 
+/********* PAGE - start *********/
+.page {
+	font-family: "Montserrat", sans-serif;
+	font-size: 10px;
+}
+
+.page__body {
+	padding: 0;
+	font-size: 1.6rem;
+	background-color: var(--color-light);
+	background-image: url("https://www.transparenttextures.com/patterns/checkered-pattern.png");
+}
+
+.page__inner {
+	padding: 0 3rem;
+}
+
+.page__container {
+	width: 100%;
+	max-width: var(--breakpoint-xxl);
+	margin: 0 auto;
+	position: relative;
+}
+/********* PAGE - end *********/
+
+
 /********* HEADER - start *********/
 .page-header {
 	margin: auto;
-	padding: 1.6rem 3.2rem;
+	padding-top: 1.6rem;
+	padding-bottom: 1.6rem;
+	display: flex;
+	align-items: center;
 	box-shadow: 0 0 1.6rem 0 rgba(0, 0, 0, 0.3);
 	background-color: var(--color-brand-1);
 }
@@ -67,11 +93,19 @@ textarea {
 	color: var(--color-white);
 }
 
-.page-header__logo {
+.page-header__brand-logo {
+	display: flex;
+}
+
+.page-header__brand-logo svg {
 	width: 2.8rem !important;
 	height: 2.8rem !important;
 	font-size: 2.8rem !important;
 	fill: var(--color-white);
+}
+
+.page-header__brand-name {
+	display: inline-block;
 }
 /********* HEADER - end *********/
 
@@ -79,7 +113,8 @@ textarea {
 /********* FOOTER - start *********/
 .page-footer {
 	width: 100%;
-	padding: 1rem 2rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 	position: absolute;
 	bottom: 0;
 	text-align: center;
