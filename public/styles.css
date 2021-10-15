@@ -170,6 +170,7 @@ footer p {
 
 /********* NOTE LIST - start *********/
 .note-list {
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -226,5 +227,15 @@ footer p {
 
 .note__button-list .note__button:not(:last-child) {
 	margin-right: 1rem;
+}
+
+@media (max-width: 500px) {
+	.note {
+		width: 100%;
+	}
+
+	.note__content {
+		min-height: inherit;
+	}
 }
 /********* NOTE - end *********/
