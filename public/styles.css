@@ -16,7 +16,7 @@ header {
   background-color: #f5ba13;
   margin: auto;
   padding: 16px 32px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
 }
 
 header h1 {
@@ -75,7 +75,7 @@ form.create-note {
   background: #fff;
   padding: 15px;
   border-radius: 7px;
-  box-shadow: 0 1px 5px rgb(138, 137, 137);
+  box-shadow: 0 1px 5px rgb(138, 135, 135);
 }
 form.create-note input,
 form.create-note textarea {
@@ -97,7 +97,7 @@ form.create-note button {
   border-radius: 50%;
   width: 36px;
   height: 36px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
   cursor: pointer;
   outline: none;
 }
