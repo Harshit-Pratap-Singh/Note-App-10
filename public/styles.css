@@ -38,7 +38,7 @@ footer p {
 }
 .note {
   background: #fff;
-  border-radius: 7px;
+  border-radius: 6px;
   box-shadow: 0 2px 5px #ccc;
   padding: 10px;
   width: 240px;
@@ -75,7 +75,7 @@ form.create-note {
   background: #fff;
   padding: 15px;
   border-radius: 7px;
-  box-shadow: 0 1px 5px rgb(138, 135, 135);
+  box-shadow: 0 1px 5px rgb(138, 136, 136);
 }
 form.create-note input,
 form.create-note textarea {
@@ -95,8 +95,8 @@ form.create-note button {
   color: #fff;
   border: none;
   border-radius: 50%;
-  width: 36px;
-  height: 36px;
+  width: 35px;
+  height: 35px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
   cursor: pointer;
   outline: none;
