@@ -1,103 +1,330 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-html {
-  font-family: "Montserrat", sans-serif;
-}
-body {
-  background: #eee;
-  padding: 0;
-background-image: url("https://www.transparenttextures.com/patterns/checkered-pattern.png");
+/********* GENERAL - start *********/
+:root {
+	--breakpoint-xs: 380px;
+	--breakpoint-sm: 576px;
+	--breakpoint-md: 768px;
+	--breakpoint-lg: 1024px;
+	--breakpoint-xl: 1080px;
+	--breakpoint-xxl: 1280px;
+	--breakpoint-xxxl: 1500px;
+	--breakpoint-xxxxl: 1700px;
+
+	--color-white: #ffffff;
+	--color-light: #f7f7f7;
+	--color-silver: #cccccc;
+	--color-gray: #888888;
+	--color-dark: #333333;
+	--color-brand-1: #f5ba13;
+	--color-success: #008080;
+	--color-error: #ff6347;
+
+	--font-1: "McLaren", cursive;
+	--font-2: "Montserrat", sans-serif;
 }
 
-header {
-  background-color: #f5ba13;
-  margin: auto;
-  padding: 16px 32px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+*,
+*:after,
+*:before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
-header h1 {
-  color: #fff;
-  font-family: "McLaren", cursive;
-  font-weight: 200;
+body svg {
+	width: 2.2rem !important;
+	height: 2.2rem !important;
+	font-size: 2.2rem !important;
 }
 
-footer {
-  position: absolute;
-  text-align: center;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;
+input,
+textarea {
+	width: 100%;
+	font-family: inherit;
+	border: none;
+	outline: none;
 }
 
-footer p {
-  color: #ccc;
+textarea {
+	resize: none;
 }
+/********* GENERAL - end *********/
+
+
+/********* PAGE - start *********/
+.page {
+	font-family: var(--font-2);
+	font-size: 10px;
+}
+
+.page__body {
+	padding: 0;
+	font-size: 1.6rem;
+	background-color: var(--color-light);
+	background-image: url("https://www.transparenttextures.com/patterns/checkered-pattern.png");
+}
+
+.page__inner {
+	padding: 0 3rem;
+}
+
+.page__container {
+	width: 100%;
+	max-width: var(--breakpoint-xxl);
+	margin: 0 auto;
+	position: relative;
+}
+/********* PAGE - end *********/
+
+
+/********* HEADER - start *********/
+.page-header {
+	height: 6rem;
+	margin: auto;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	display: flex;
+	align-items: center;
+	box-shadow: 0 0 1.6rem 0 rgba(0, 0, 0, 0.3);
+	background-color: var(--color-brand-1);
+}
+
+.page-header__title {
+	display: flex;
+	align-items: self-end;
+	font-family: var(--font-1);
+	font-weight: 200;
+	line-height: 100%;
+	color: var(--color-white);
+}
+
+.page-header__brand-logo {
+	display: flex;
+}
+
+.page-header__brand-logo svg {
+	width: 2.8rem !important;
+	height: 2.8rem !important;
+	font-size: 2.8rem !important;
+	fill: var(--color-white);
+}
+
+.page-header__brand-name {
+	display: inline-block;
+}
+/********* HEADER - end *********/
+
+
+/********* FOOTER - start *********/
+.page-footer {
+	width: 100%;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	text-align: center;
+	background-color: var(--color-gray);
+}
+
+.page-footer__copyright {
+	color: var(--color-white);
+}
+/********* FOOTER - end *********/
+
+
+/********* STICKY - start *********/
+.sticky,
+.sticky__body {
+	height: 100%;
+}
+
+.sticky__body {
+	height: 100%;
+	padding-top: 6rem;
+}
+
+.sticky__wrapper {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.sticky__header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 99999;
+}
+
+.sticky__main {
+	flex: 1;
+}
+/********* STICKY - end *********/
+
+
+/********* BUTTON - start *********/
+.button {
+	width: 4rem;
+	height: 4rem;
+	color: var(--color-white);
+	border-radius: 50%;
+	border: none;
+	background-color: var(--color-gray);
+	box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+	outline: none;
+	transition: all 0.5s ease-in-out 0s;
+}
+
+.button svg {
+	fill: var(--color-white);
+}
+
+.button:hover {
+	background-color: var(--color-brand-1);
+	box-shadow: inset 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+}
+
+.button--small {
+	width: 3rem;
+	height: 3rem;
+}
+
+.button--small svg {
+	width: 1.8rem !important;
+	height: 1.8rem !important;
+	font-size: 1.8rem !important;
+}
+
+.button--success:hover {
+	background-color: var(--color-success);
+}
+
+.button--delete:hover {
+	background-color: var(--color-error);
+}
+/********* BUTTON - end *********/
+
+
+/********* CREATE NOTE - start *********/
+.create-note {
+	width: 100%;
+	max-width: 48rem;
+	margin: 3rem auto 2rem auto;
+	padding: 1.5rem;
+	position: relative;
+	border-radius: 0.7rem;
+	background-color: var(--color-white);
+	box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.create-note__field {
+	padding: 0.4rem;
+	font-size: 1.2em;
+}
+
+.create-note__title {
+	font-family: var(--font-1);
+	font-size: 1.3em;
+	font-weight: 900;
+}
+
+.create-note__description {
+	font-family: var(--font-1);
+	font-size: 1em;
+	font-weight: 400;
+}
+
+.create-note__button {
+	position: absolute;
+	right: -2rem;
+	bottom: -2rem;
+}
+/********* CREATE NOTE - end *********/
+
+
+/********* NOTE LIST - start *********/
+.note-list {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style: none;
+}
+.note-list__wrapper {
+	width: 100%;
+	margin: 5rem 0;
+	display: flex;
+	justify-content: center;
+}
+
+.note-list__item {
+	margin: 1rem;
+}
+
+@media (max-width: 600px) {
+	.note-list__item {
+		margin: 0;
+	}
+
+	.note-list__item:not(:last-child) {
+		margin-bottom: 1.5rem;
+	}
+}
+/********* NOTE LIST - end *********/
+
+
+/********* NOTE - start *********/
 .note {
-  background: #fff;
-  border-radius: 7px;
-  box-shadow: 0 2px 5px #ccc;
-  padding: 10px;
-  width: 240px;
-  margin: 16px;
-  float: left;
-}
-.note h1 {
-  font-size: 1.1em;
-  margin-bottom: 6px;
-}
-.note p {
-  font-size: 1.1em;
-  margin-bottom: 10px;
-  white-space: pre-wrap;
-  word-wrap: break-word;
+	width: 24rem;
+	padding: 1rem;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-radius: 0.7rem;
+	background-color: var(--color-light);
+	box-shadow: 0 0.2rem 0.5rem var(--color-silver);
+	transition: all 0.4s ease-in-out 0s;
 }
 
-.note button {
-  position: relative;
-  float: right;
-  margin-right: 10px;
-  color: #f5ba13;
-  border: none;
-  width: 36px;
-  height: 36px;
-  cursor: pointer;
-  outline: none;
+.note:hover {
+	background-color: var(--color-white);
 }
 
-form.create-note {
-  position: relative;
-  width: 480px;
-  margin: 30px auto 20px auto;
-  background: #fff;
-  padding: 15px;
-  border-radius: 7px;
-  box-shadow: 0 1px 5px rgb(138, 137, 137);
+.note__content {
+	min-height: 10rem;
 }
-form.create-note input,
-form.create-note textarea {
-  width: 100%;
-  border: none;
-  padding: 4px;
-  outline: none;
-  font-size: 1.2em;
-  font-family: inherit;
-  resize: none;
+
+.note__title {
+	margin-bottom: 0.6rem;
+	font-family: var(--font-1);
+	font-weight: 900;
+	font-size: 1em;
 }
-form.create-note button {
-  position: absolute;
-  right: 18px;
-  bottom: -18px;
-  background: #f5ba13;
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  width: 36px;
-  height: 36px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-  outline: none;
+
+.note__description {
+	margin-bottom: 1rem;
+	font-family: var(--font-1);
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	font-size: 0.8em;
 }
+
+.note__button-list {
+	display: flex;
+	align-self: flex-end;
+	justify-content: flex-end;
+}
+
+.note__button-list .note__button:not(:last-child) {
+	margin-right: 1rem;
+}
+
+@media (max-width: 600px) {
+	.note {
+		width: 100%;
+	}
+
+	.note__content {
+		min-height: inherit;
+	}
+}
+/********* NOTE - end *********/
